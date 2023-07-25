@@ -62,9 +62,9 @@ GitHub & Visual Studio Code
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](<a href="https://github.com/faisalakb/Leaderboard.git"></a>)
+- [Live Demo Link](<a href="https://github.com/faisalakb/leaderboardAPI"></a>)
 
-<p align="right">(<a href="https://github.com/faisalakb/Leaderboard.git">back to top</a>)</p>
+<p align="right">(<a href="https://github.com/faisalakb/leaderboardAPI">back to top</a>)</p>
 
 
 
@@ -87,7 +87,7 @@ Install Node Js on your local computer.
 
 Install this project with:
 
-<pre> git clone https://github.com/faisalakb/Leaderboard.git</pre>
+<pre> git clone https://github.com/faisalakb/leaderboardAPI</pre>
 
 ### Usage
 
@@ -99,7 +99,7 @@ To run tests, run a live server on your computer..
 
 ### Deployment
 
-You can deploy this project in this link by <a href="https://github.com/faisalakb/Leaderboard.git">click</a>
+You can deploy this project in this link by <a href="https://github.com/faisalakb/leaderboardAPI">click</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
