@@ -116,7 +116,7 @@ You can deploy this project in this link by <a href="https://github.com/faisalak
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **About Page**
+- [ ] **Web API**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- CONTRIBUTING -->
