@@ -11,7 +11,6 @@ Hello, I am:
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
-  - [🔭 Video Presentation](#video)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -46,12 +45,7 @@ GitHub & Visual Studio Code
 
 ### Key Features <a name="key-features"></a>
 
-- Add todo's
-- Delete todo's
-- Update todo's
-- Save previously loaded information
-- Single click to clear all todo's list
-- Enter button to be able to add todo's.
+ -Use wire frame model to build a leaderboard setup
 - Use import, export, modules to simplify the code
 - Use arrow functions and classes as well for  reusability
 - use webpack for smooth working
@@ -62,7 +56,7 @@ GitHub & Visual Studio Code
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](<a href="https://github.com/faisalakb/leaderboardAPI"></a>)
+- [Live Demo Link](coming soon)
 
 <p align="right">(<a href="https://github.com/faisalakb/leaderboardAPI">back to top</a>)</p>
 
