@@ -56,7 +56,7 @@ GitHub & Visual Studio Code
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](coming soon)
+- [Coming Soon]
 
 <p align="right">(<a href="https://github.com/faisalakb/leaderboardAPI">back to top</a>)</p>
 
@@ -79,13 +79,14 @@ Install Node Js on your local computer.
 
 ### Install
 
-Install this project with:
+To Install this project : you need to clone the following link.
 
 <pre> git clone https://github.com/faisalakb/leaderboardAPI</pre>
 
 ### Usage
 
-To run the project, open the index file by double clicking
+To run the project, write on terminal : npm start
+Note: you need to first setup your webpack setup
 
 ### Run tests
 
