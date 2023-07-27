@@ -41,14 +41,16 @@ h2 {
   padding-bottom: 20px;
   border: 3px solid grey;
   border-radius: 20px;
-  background-color:burlywood;
+  background-color: burlywood;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
-.scores{
+
+.scores {
   border: 2px solid black;
   border-radius: 10px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
+
 .inptxt {
   font-size: 20px;
   width: 300px;
@@ -57,7 +59,7 @@ h2 {
 }
 
 .subBtn {
-  margin-left: 70%;;
+  margin-left: 70%;
   font-size: 20px;
   width: 100px;
   height: 30px;
@@ -67,6 +69,7 @@ h2 {
 tr:nth-child(even) {
   background-color: #ddd;
 }
+
 tr:nth-child(odd) {
   background-color: burlywood;
 }
