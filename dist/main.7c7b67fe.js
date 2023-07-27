@@ -9,13 +9,33 @@
  */
 (self["webpackChunkleaderboad"] = self["webpackChunkleaderboad"] || []).push([["main"],{
 
+/***/ "./modules/enterData.js":
+/*!******************************!*\
+  !*** ./modules/enterData.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar urlPOST = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/9gTdPAlc76chfIhvqRpi/scores/';\nvar name = document.getElementById('inpIdName').value;\nvar score = document.getElementById('inpIdScore').value;\nvar submit = document.getElementById('submitBtn');\nvar gid = [];\nvar enterData = function enterData() {\n  submit.addEventListener('click', function () {\n    console.log('calling from  event listener');\n    fetch(urlPOST, {\n      method: 'POST',\n      body: JSON.stringify({\n        \"user\": name,\n        \"score\": score\n      }),\n      headers: {\n        'Content-type': 'application/json; charset=UTF-8'\n      }\n    }).then(function (response) {\n      if (!response.ok) {\n        throw new Error('From POST: Network response was not ok');\n      }\n      return response.json(); // This returns a Promise that resolves with the JSON data\n    }).then(function (data) {\n      gid = data.result; // Assuming the response contains a property 'result'\n      console.log(gid); // Log the third element (index 2) of the 'gid' array\n    })[\"catch\"](function (error) {\n      console.error('Error:', error);\n    });\n  });\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (enterData);\n\n//# sourceURL=webpack://leaderboad/./modules/enterData.js?");
+
+/***/ }),
+
+/***/ "./modules/getData.js":
+/*!****************************!*\
+  !*** ./modules/getData.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar urlGET = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/9gTdPAlc76chfIhvqRpi/scores/';\nvar ref = document.getElementById('refId');\nvar sec = document.getElementById('secContainer');\nvar sc = document.getElementById('sc');\nvar fetchData = function fetchData() {\n  fetch(urlGET, {\n    method: 'GET',\n    headers: {\n      'Content-type': 'application/json; charset=UTF-8'\n    }\n  }).then(function (response) {\n    if (!response.ok) {\n      throw new Error('From GET: Network response was not ok');\n    }\n    return response.json(); // This returns a Promise that resolves with the JSON data\n  }).then(function (data) {\n    console.log(data);\n    data.result.forEach(function (element) {\n      var tr = document.createElement('tr');\n      var td2 = document.createElement('td');\n      td2.textContent = element.user;\n      tr.appendChild(td2);\n      sc.appendChild(tr);\n      var td = document.createElement('td');\n      td.textContent = element.score;\n      tr.appendChild(td);\n      sc.appendChild(tr);\n    });\n  })[\"catch\"](function (error) {\n    console.error('Error:', error);\n  });\n};\n\n// Call the fetch method to make the GET request\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fetchData);\n\n//# sourceURL=webpack://leaderboad/./modules/getData.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\nvar gid = [];\nvar p = fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/:id/scores/', {\n  method: 'POST',\n  body: JSON.stringify({\n    name: 'faisal'\n  }),\n  // Adding headers to the request\n  headers: {\n    'Content-type': 'application/json; charset=UTF-8'\n  }\n});\nvar data = p.JSON();\ngid = data.result.split('');\nconsole.log(gid[2]);\n\n//# sourceURL=webpack://leaderboad/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_getData_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/getData.js */ \"./modules/getData.js\");\n/* harmony import */ var _modules_enterData_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/enterData.js */ \"./modules/enterData.js\");\n\n\n\n(0,_modules_getData_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n(0,_modules_enterData_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n\n//# sourceURL=webpack://leaderboad/./src/index.js?");
 
 /***/ }),
 
