@@ -45,9 +45,10 @@ GitHub & Visual Studio Code
 
 ### Key Features <a name="key-features"></a>
 
- -Use wire frame model to build a leaderboard setup
+- Use GET & POST method for API to retrive data
+- Use wire frame model to build a leaderboard setup
 - Use import, export, modules to simplify the code
-- Use arrow functions and classes as well for  reusability
+- Use arrow functions
 - use webpack for smooth working
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
